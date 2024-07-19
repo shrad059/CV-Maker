@@ -1,0 +1,335 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    width: 95vw;
+    font-size: 14px;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 98%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #654321;
+    background-color: #F4A261;
+  }
+  
+  .displayContainer {
+    display: flex;
+  }
+  
+  .button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #FCDC94;
+    font-weight: bold;
+    border: 2px solid #654321;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #D4AF37;
+  }
+  
+  .contentWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .leftContainer, .rightContainer {
+    padding: 20px;
+    border: 2px solid #654321;
+    margin-top: 10px;
+  }
+  
+  .leftContainer {
+    flex: 1;
+    max-width: 50%;
+    margin-right: 10px;
+    padding-left: 0px;
+    padding-right: 10px;
+    padding-top: 0px;
+    height: 100%;
+    background-color: #ffffff;
+  }
+  
+  .textbox-content {
+    line-height: 1;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: right;
+    background-color: #E76F51;
+  }
+  
+  .leftContainer .textbox-content {
+    font-size: 10px;
+    line-height: 1.2;
+    margin-top: -10px;
+    margin-bottom: -5px;
+  }
+  
+  .rightContainer {
+    width: 50%;
+    padding: 10px;
+    border: 2px solid #654321;
+    border-radius: 4px;
+    background-color: #fff;
+    overflow-y: auto;
+    box-sizing: border-box;
+  }
+  
+  .copyIcon, .plusButton, .printIcon {
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .contentRow {
+    display: flex;
+    width: 99%;
+    padding: 2px 5px;
+    border-bottom: 1px solid #ddd;
+    margin: 0px;
+    cursor: default;
+    position: relative;
+  }
+  
+  .editableContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 13px;
+    cursor: pointer;
+    pointer-events: auto;
+    margin-left: 23px;
+    padding: 10px 4px;
+    flex: 1;
+    box-sizing: border-box;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    max-width: 99%;
+    font-family: 'Times new roman';
+  }
+  
+  textarea.editableContent:focus {
+    outline: none;
+  }
+  
+  .nonEditableContent {
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: fit-content;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .headerText {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0px;
+  }
+  
+  .headerText span {
+    font-size: .8em;
+    font-weight: normal;
+    width: 100%;
+  }
+  
+  .sectionText {
+    font-size: 15px;
+    text-align: left;
+    border-bottom: 1px solid #000;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-bottom: 3px;
+    box-sizing: border-box;
+  }
+  
+  .titleText {
+    text-align: left;
+    font-size: 12.5px;
+    padding: 0;
+    margin-bottom: 1.5px;
+    margin-top: 0px;
+    line-height: 1;
+    display: block;
+  }
+  
+  .subtitleText {
+    text-align: left;
+    font-size: 13.5px;
+    margin-bottom: 2px;
+    padding: 0;
+    margin-top: 0px;
+    width: 100%;
+    line-height: 1;
+    display: block;
+  }
+  
+  .printIcon:hover {
+    background-color: #E76F51;
+    width: min-content;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  
+  .plusButton:hover {
+    background-color: #E76F51;
+    width: min-content;
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+    border-radius: 40px;
+  }
+  
+  .nonBoldSubtitleText {
+    text-align: left;
+    font-size: 12.5px;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 4px;
+  }
+  
+  .new-textbox {
+    text-align: left;
+    font-size: 10px;
+    margin-top: 5px;
+    padding: 0px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    min-width: 150px;
+  }
+  
+  .headerText::before {
+    display: inline-block;
+    margin-right: 5px;
+  }
+  
+  .addTextboxButton {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #E76F51;
+    border: 2px solid #654321;
+    border-radius: 5px;
+    cursor: default;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  .addTextboxButton:hover {
+    background-color: #6f3323;
+  }
+  
+  .addTextboxButton .fa-plus {
+    margin-right: 5px;
+  }
+  
+  .textBoxWrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: 1px solid grey;
+    margin-bottom: 8px;
+  }
+  
+  .plusButton:hover {
+    background-color: #36BA98;
+    border-radius: 40px;
+  }
+  
+  .textBoxWrapper:hover .plusButton {
+    display: inline;
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+  
+  .italic {
+    font-style: italic;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  .indentLeft {
+    padding-left: 90%;
+  }
+  
+  .indentRight {
+    padding-right: 5%;
+  }
+  
+  .iconContainer {
+    position: absolute;
+    height: 90%;
+    bottom: 0;
+    left: 0;
+    width: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0;
+    padding: 4px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .contentRow:hover .iconContainer {
+    opacity: 1;
+  }
+  
+  .iconButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 1px;
+    opacity: 0.6;
+    border-radius: 5px;
+  }
+  
+  .trashIcon {
+    background-color: red;
+  }
+  
+  .addIcon {
+    background-color: green;
+  }
+  
+  @media print {
+    .rightContainer {
+      width: auto !important;
+      background-color: transparent !important;
+      border: none !important;
+      padding: 20px !important;
+    }
+  
+    .nonEditableContent {
+      background-color: transparent !important;
+      border: none !important;
+    }
+  
+    .sectionText {
+      border-bottom: 1px solid black !important;
+    }
+  }
+  
